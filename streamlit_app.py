@@ -41,3 +41,6 @@ my_data_row = my_cur.fetchone()
 streamlit.text("MY fruit list")
 streamlit.text(my_data_row)
 
+streamlit.write("Thanks for adding a fruit")
+my_cur.execute("insert into fruit_load_list values('from STreamlit')")
+
