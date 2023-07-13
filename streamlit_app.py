@@ -25,7 +25,7 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 
 # Display the table on the page.
 streamlit.dataframe(fruits_to_show)
-def get_fruityvice_date(this_fruit_choice):
+def get_fruityvice_data(this_fruit_choice):
     #streamlit.write('The user entered ', fruit_choice)
     fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+ this_fruit_choice)
     # write your own comment -what does the next line do? 
